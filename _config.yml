@@ -1,0 +1,23 @@
+title: My writeups blog
+timezone: Europe/Rome
+lang: en-US
+baseurl: /ctf-journal
+
+# Build settings
+future: true
+incremental: false
+strict_front_matter: true
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class   : 'syntax'
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+sass:
+  style: compressed

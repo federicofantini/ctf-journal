@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="post">
+  <header>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-tags">
+      {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}/tag/{{ tag | downcase }}">#{{ tag | downcase }}</a>
+      {% endfor %}
+    </div>
+    <div class="post-author">
+      <a href="https://github.com/federicofantini">{{ page.author }}</a>
+    </div>
+    <div class="post-date">
+      <p>{{ page.date | date: "%e %B, %Y %H:%M %Z" }}</p>
+    </div>
+  </header>
+  <hr>
+  <div class="post-meta">
+    <p>{{ page.meta }}</p>
+  </div>
+  <hr>
+  <br><br>
+  <article class="post-content">
+    {{ content }}
+  </article>
+</div>

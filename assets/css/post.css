@@ -1,0 +1,121 @@
+.post {
+  width: 100%;
+}
+
+.post * {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.post pre {
+  overflow-x: scroll;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.post code {
+  font-size: 15px;
+}
+
+.post ul {
+  padding-left: 10px;
+}
+
+.post table {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.post table {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.post table, .post th, .post td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+.post th, .post td {
+  padding: 10px;
+}
+
+.post header {
+  width: 100%;
+  text-align: center;
+}
+
+.post-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 42px;
+}
+
+.post-tags, .post-author {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-tags a, .post-author a {
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.85;
+  margin: auto;
+  color: #08309e;
+  padding: 0 5px;
+}
+
+.post-meta {
+  text-align: center;
+}
+
+.post-date {
+  font-size: 14px;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.post-content {
+  margin-top: 30px;
+}
+
+.post-content a {
+  color: #08309e;
+}
+
+
+
+
+
+/*
+-----------------------------------------------------------------------------
+-------------------------------D-----A-----R-----K---------------------------
+-----------------------------------------------------------------------------
+*/
+
+
+
+
+
+html[data-theme='dark'] .post-content a {
+  color: #20C20E;
+}
+
+html[data-theme='dark'] .post-tags a,
+html[data-theme='dark'] .post-author a {
+  color: #20C20E;
+}
+
+html[data-theme='dark'] .post table,
+html[data-theme='dark'] .post th,
+html[data-theme='dark'] .post td {
+  border: 1px solid #fff;
+}
+
+html[data-theme='dark'] .post pre {
+  background: black;
+}
